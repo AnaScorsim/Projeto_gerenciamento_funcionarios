@@ -1,0 +1,12 @@
+.cadastro-div {
+  padding-top: 4rem;
+}
+
+.cadastro-title {
+  color: var(--accent-color);
+  font-size: clamp(2rem, 5vw, 5rem);
+  margin: 7vh 0;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  

@@ -1,0 +1,50 @@
+.inicio-div {
+    padding: clamp(2rem, 10vw, 5rem) clamp(1rem, 10vw, 18rem);
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inicio-title {
+    font-size: clamp(2rem, 10vw, 4rem);
+}
+
+.inicio-text {
+    font-size: clamp(1rem, 3vw, 1.3rem);
+    text-align: center;
+}
+
+.inicio-button {
+    background-color: rgb(57, 2, 125);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 2rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 4vh 2vw;
+    width: clamp(150px, 20vw, 250px);
+}
+
+.inicio-button:hover {
+    background-color: rgb(81, 15, 189);
+}
+
+@media (max-width: 768px) {
+    .inicio-div {
+        padding: 2rem;
+    }
+
+    .inicio-button {
+        margin: 2vh 2vw;
+    }
+
+    .inicio-button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+}

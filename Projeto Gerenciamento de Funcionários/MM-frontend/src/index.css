@@ -1,0 +1,203 @@
+:root {
+  --primary-color: #6a0dad;
+  --secondary-color: #620d9f;
+  --accent-color: rgb(75, 29, 132);
+  --button-bg: rgba(255, 255, 255, 0.815);
+  --button-text: rgb(57, 2, 125);
+  --error-color: red;
+  --success-color: limegreen;
+
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(64, 3, 185, 0.7), rgba(136, 13, 136, 0.7));
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1, .inicio-title {
+  font-size: clamp(1.8rem, 5vw, 4rem);
+  line-height: 1.1;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--button-text);
+}
+
+.erro,
+.mensagem {
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin-top: 0;
+  padding-bottom: 2vh;
+}
+
+.erro {
+  color: var(--error-color);
+}
+
+.mensagem {
+  color: var(--success-color);
+}
+
+button {
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  width: 100%;
+  height: 45px;
+  margin-top: 3vh;
+  padding: 5px;
+  font-weight: 500;
+  margin-bottom: 3vh;
+}
+
+.input-field, .select-field {
+  flex: 1;
+  padding: 0.5rem 0rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: var(--button-bg);
+  color: black;
+  width: 100%;
+  height: 45px;
+  margin-top: 3vh;
+  text-indent: 2%;
+}
+
+.form-container {
+  background-color: var(--secondary-color);
+  padding: 0vh 1.2vw;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  width: clamp(300px, 40vw, 500px);
+}
+
+.tabela {
+  max-height: 55vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) #f1f1f1;
+}
+
+table {
+  width: 100%;
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background-color: var(--primary-color);
+  color: white;
+  z-index: 2;
+}
+
+td {
+  background: white;
+  color: var(--button-text);
+  padding: 0.5px;
+  border-radius: 5px;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+}
+
+td.checkbox {
+  background-color: #6a0dad;
+}
+
+tr.adicionarFuncionarios{
+  height: 35px;
+}
+
+.botoes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 10px;
+}
+
+.botao {
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: clamp(0.5rem, 1rem, 1.5rem);
+  width: clamp(120px, 18vw, 220px);
+}
+
+.botao.cadastrar {
+  background-color: var(--success-color);
+}
+
+.botao.logout {
+  background-color: var(--error-color);
+}
+
+td.acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 3px;
+}
+
+.botao-acao {
+  flex: 1;
+  min-width: 80px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.botao-acao.adicionar {
+  background-color: limegreen;
+}
+
+.botao-acao.editar {
+  background-color: orange;
+}
+
+.botao-acao.excluir {
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    width: 85%;
+    padding: 0 10px;
+  }
+
+  .tabela {
+    max-height: 50vh;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}

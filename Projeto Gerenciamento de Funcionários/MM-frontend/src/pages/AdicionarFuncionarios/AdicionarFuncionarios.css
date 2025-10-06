@@ -1,0 +1,48 @@
+.adicionar-div {
+  max-width: 1200px;
+  margin: 80px auto;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.adicionar-conteudo {
+  padding: 20px;
+  text-align: center;
+  max-height: 570px;
+}
+
+.adicionar-tabela {
+  max-height: 510px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) #f1f1f1;
+}
+
+.adicionar-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.adicionar-button {
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--button-text);
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 12px;
+} 
+
+@media (max-width: 768px) {
+  .adicionar-button {
+    width: 100%;
+  }
+}
